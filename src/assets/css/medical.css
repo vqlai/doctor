@@ -16,7 +16,7 @@
 .buy_top .price{color: #ff5e5e;font-size: 1.36rem;}
 .buy_top ul{margin: 0 2%;}
 .buy_top ul li{float: left;width: 46%;margin:1rem 2% 0 2%;padding:1rem 0;border: 1px solid #efefef;border-radius: .4rem;box-sizing: border-box;color: #979797;font-size: 1rem;}
-.buy_top ul li.on{background: #ff5e5e;color: #fff;border: none;}
+.buy_top ul li.on{background: #ff5e5e;color: #fff;border: 1px solid #ff5e5e;}
 .buy_bottom{background: #fff;}
 .buy_bottom h3{padding: 1.25rem 0 1.25rem 1rem;position: relative;font-size: 1.25rem;line-height: 1.25rem;}
 .buy_bottom h3:before{content: ' ';position: absolute;top: 1.25rem;left: 0;width: .4rem;height: 1.25rem;background: #3dc8c0;}
@@ -28,12 +28,22 @@
 .buy_opt span.purchase{width: 43.5%;background: #3dc8c0;}
 
 /*共用样式*/
-.download{padding: .5rem 1.16rem;background: rgba(0,0,0,.6);font-size: 1rem;position: relative;color: #fff;}
-.download span{display: inline-block;padding:.5rem 0 .5rem 2rem;background: url(../images/ali_pay.png) no-repeat left center;background-size: 16%;}
-.download a{color: #fff;background: #83b6fe;padding: .5rem;position: absolute;top: .5rem;right: 1rem;z-index: 10;border-radius: .2rem;}
 .common_page_title{padding: .5rem 0 .5rem 1rem;position: relative;font-size: 1rem;line-height: 1.4rem;}
 .common_page_title:before{position:absolute;top:0;left:0;content: " ";width: .5rem;height: 1.08rem;background: #3dc8c0;margin-top:.6rem;}
 img{display: block;width: 100%;height: auto;}
 .bottom_btn{position: fixed;left: 0;bottom: 0;right: 0;width: 100%;height: 4rem;line-height: 4rem;background: #3dc8c0;color: #fff;text-align: center;font-size: 1.21rem;}
 .btn_blank{width:100%;height: 4rem;}
 .page_btn{margin:0 2rem;padding: 1.67rem 0;text-align: center;background: #4dd0c8;color: #fff;border-radius: .4rem;font-size: 1.2rem;}
+
+/*头部*/
+.header .blank{padding: 5.86% 0;}
+.header .top{position: fixed;top: 0;left:0;right: 0;padding: 5.86% 0;overflow: hidden;background: #3dc8c0;z-index: 9;}
+.header .top > *{position: absolute;top: 50%;bottom: 0;height: 3rem;margin: -1.5rem 0 0;line-height: 3rem;}
+.header .top .button{width: 11%;text-align: center;z-index: 2;}
+.header .top .title{width: 78%;left:11%;text-align: center;font-size:1.35rem; color: #fefefe;z-index: 1}
+.header .top .back .icon-fanhui{color: #FFF;font-size: 1.35rem;}
+.header .top .right{right: 0;color: #FFF;font-size: 1.2rem;width: 15%;}
+.header .top.transparent{background: none;}
+.header .top.transparent .back .icon-fanhui{color: #4dd0c8;vertical-align: middle;}
+.header .top.transparent .back{color: #4dd0c8;width: 20%;font-size: 1.2rem;}
+.header .top .back span{vertical-align: middle;}
