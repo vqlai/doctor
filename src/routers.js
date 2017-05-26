@@ -4,6 +4,7 @@
 const routers = [{
     path: '/',
     name: 'base',
+    // meta: {keepAlive: true},
     component:login
 }, {
     path: '/user/login',
@@ -18,6 +19,7 @@ const routers = [{
 }, {
     path: '/user/register',
     name: 'register',
+    meta: {keepAlive: true},
     component(resolve) {
        require(['./views/user/register.vue'], resolve);
     }
@@ -64,14 +66,14 @@ const routers = [{
         require(['./views/doctor/advice.vue'], resolve);
     }
 },{
-    path: '/doctor/homedr',
-    name: 'homedr',
+    path: '/doctor/home_doctor',
+    name: 'home_doctor',
     component(resolve) {
         require(['./views/doctor/home_doctor.vue'], resolve);
     }
 },{
-    path: '/doctor/imagead',
-    name: 'imagead',
+    path: '/doctor/img_advice',
+    name: 'img_advice',
     component(resolve) {
         require(['./views/doctor/img_advice.vue'], resolve);
     }
@@ -101,13 +103,13 @@ const routers = [{
     }
 },{
     path: '/help/detail',
-    name: 'detail',
+    name: 'help_detail',
     component(resolve) {
         require(['./views/help/detail.vue'], resolve);
     }
 },{
     path: '/help/list',
-    name: 'list',
+    name: 'help_list',
     component(resolve) {
         // require.ensure(['./views/doctor/doctor.vue'], () => {
         //     resolve(require('./views/doctor/doctor.vue'));
